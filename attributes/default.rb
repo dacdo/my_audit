@@ -14,15 +14,15 @@ default['audit']['profiles'].push(
   # Profile from Supermarket
   # note: If reporting to Compliance, first upload the Supermarket profile to Chef Compliance.
   # note: Artifactory's Supermarket implementation—"Chef Cookbook repository"—does not support InSpec compliance profiles at this time
-  {
-    'name': 'ssh',
-    'supermarket': 'hardening/ssh-hardening',
-  },
+  # {
+  #   'name': 'ssh',
+  #   'supermarket': 'hardening/ssh-hardening',
+  # },
   # Profile from GitHub
-  {
-    'name': 'ssl',
-    'git': 'https://github.com/dev-sec/ssl-benchmark.git',
-  },
+  # {
+  #   'name': 'ssl',
+  #   'git': 'https://github.com/dev-sec/ssl-benchmark.git',
+  # },
   # Profile from URL
   {
     'name': 'ssh',
