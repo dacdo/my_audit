@@ -1,6 +1,7 @@
 default['audit']['fetcher'] = 'chef-automate'
 default['audit']['reporter'] = 'chef-automate'
-# default['audit']['inspec_version'] = 'latest'
+default['audit']['server'] = 'https://13.210.69.80/data-collector/v0/'
+default['audit']['refresh_token'] = 'God3ytMQm6w4QbbdrFJGyEvEFZY='
 
 default['audit']['profiles'] = [
   {
