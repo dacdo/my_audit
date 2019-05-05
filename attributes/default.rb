@@ -1,5 +1,6 @@
 default['audit']['fetcher'] = 'chef-automate'
 default['audit']['reporter'] = 'chef-automate'
+default['audit']['insecure'] = true
 # default['audit']['reporter'] = 'json-file'
 default['audit']['server'] = 'https://ip-172-31-1-82.ap-southeast-2.compute.internal'
 default['audit']['refresh_token'] = 'God3ytMQm6w4QbbdrFJGyEvEFZY='
