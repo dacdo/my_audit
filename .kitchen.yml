@@ -1,0 +1,33 @@
+---
+driver:
+  name: vagrant
+  chef_version: latest
+
+transport:
+  name: ssh
+
+provisioner:
+  name: chef_zero
+  policyfile: policyfiles/my_audit.rb
+  always_update_cookbooks: true
+  product_name: chef
+  client_rb:
+    data_collector.server_url: 'https://13.210.69.80/data-collector/v0/'
+    data_collector.token: 'God3ytMQm6w4QbbdrFJGyEvEFZY='
+    verify_api_cert: false
+    ssl_verify_mode: :verify_none
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: bento/centos-7
+
+suites:
+  - name: default
+    run_list:
+      - recipe[my_audit::default]
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:
