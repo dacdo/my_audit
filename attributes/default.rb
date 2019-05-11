@@ -1,10 +1,10 @@
-default['audit']['fetcher'] = 'chef-automate'
-default['audit']['reporter'] = 'chef-automate'
+# default['audit']['fetcher'] = 'chef-automate'
+# default['audit']['reporter'] = 'chef-automate'
 default['audit']['insecure'] = true
-# default['audit']['reporter'] = 'json-file'
-default['audit']['server'] = 'https://ip-172-31-1-82.ap-southeast-2.compute.internal'
-default['audit']['refresh_token'] = 'God3ytMQm6w4QbbdrFJGyEvEFZY='
-default['audit']['token'] = 'God3ytMQm6w4QbbdrFJGyEvEFZY='
+default['audit']['reporter'] = 'json-file'
+# default['audit']['server'] = 'https://ip-172-31-1-82.ap-southeast-2.compute.internal'
+# default['audit']['refresh_token'] = 'God3ytMQm6w4QbbdrFJGyEvEFZY='
+# default['audit']['token'] = 'God3ytMQm6w4QbbdrFJGyEvEFZY='
 
 default['audit']['profiles'].push(
   #  Profile from Chef Compliance
@@ -25,8 +25,13 @@ default['audit']['profiles'].push(
   #   'git': 'https://github.com/dev-sec/ssl-benchmark.git',
   # },
   # Profile from URL
+  # {
+  #   'name': 'ssh',
+  #   'url': 'https://github.com/dev-sec/tests-ssh-hardening/archive/master.zip',
+  # }
+  # Profile from GitHub
   {
-    'name': 'ssh',
-    'url': 'https://github.com/dev-sec/tests-ssh-hardening/archive/master.zip',
+    'name': 'ssl',
+    'git': 'https://github.com/dacdo/ins_jdk.git'
   }
 )
