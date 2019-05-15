@@ -2,7 +2,7 @@
 default['audit']['reporter'] = 'chef-automate'
 default['audit']['insecure'] = true
 # default['audit']['reporter'] = 'json-file'
-default['audit']['server'] = 'https://ec2-13-210-69-80.ap-southeast-2.compute.amazonaws.com'
+default['audit']['server'] = 'https://ec2-13-210-69-188.ap-southeast-2.compute.amazonaws.com'
 default['audit']['refresh_token'] = 'God3ytMQm6w4QbbdrFJGyEvEFZY='
 default['audit']['token'] = 'God3ytMQm6w4QbbdrFJGyEvEFZY='
 
