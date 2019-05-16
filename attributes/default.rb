@@ -1,9 +1,9 @@
-# default['audit']['fetcher'] = 'chef-automate'
+default['audit']['fetcher'] = 'chef-automate'
 default['audit']['reporter'] = 'chef-automate'
 default['audit']['insecure'] = true
 # default['audit']['reporter'] = 'json-file'
+# default['audit']['server'] = 'https://ec2-13-239-133-233.ap-southeast-2.compute.amazonaws.com/data-collector/v0/'
 default['audit']['server'] = 'https://ec2-13-210-69-188.ap-southeast-2.compute.amazonaws.com/data-collector/v0/'
-# default['audit']['server'] = 'https://ec2-13-210-69-188.ap-southeast-2.compute.amazonaws.com/data-collector/v0/'
 default['audit']['refresh_token'] = 'God3ytMQm6w4QbbdrFJGyEvEFZY='
 default['audit']['token'] = 'God3ytMQm6w4QbbdrFJGyEvEFZY='
 
